@@ -18,6 +18,7 @@ func New(e *echo.Echo, usecase user.UsecaseInterface) {
 	}
 
 	e.GET("/users", handler.GetAll)
+	e.GET("/dummy", handler.GetAll)
 	e.POST("/users", handler.PostData)
 }
 
