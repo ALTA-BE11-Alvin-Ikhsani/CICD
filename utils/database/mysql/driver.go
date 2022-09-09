@@ -11,7 +11,7 @@ import (
 
 func InitDB(cfg *config.AppConfig) *gorm.DB {
 	// connectionString := "root:qwerty123@tcp(127.0.0.1:3306)/db_be11?charset=utf8&parseTime=True&loc=Local"
-	connectionString := fmt.Sprintf("%s:%s@tcp(%s:%d)/%s?charset=utf8&parseTime=True&loc=Local", cfg.DB_USERNAME, cfg.DB_PASSWORD, cfg.DB_HOST, cfg.DB_PORT, cfg.DB_NAME)
+	connectionString := fmt.Sprintf("%s:qweasdzxc@tcp(%s:%d)/%s?charset=utf8&parseTime=True&loc=Local", cfg.DB_USERNAME, cfg.DB_HOST, cfg.DB_PORT, cfg.DB_NAME)
 	log.Println(cfg.DB_USERNAME, cfg.DB_PASSWORD, cfg.DB_HOST)
 	// var err error
 	// var db *gorm.DB
