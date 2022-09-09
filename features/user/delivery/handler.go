@@ -12,6 +12,7 @@ type UserDelivery struct {
 	userUsecase user.UsecaseInterface
 }
 
+// ini komen
 func New(e *echo.Echo, usecase user.UsecaseInterface) {
 	handler := &UserDelivery{
 		userUsecase: usecase,
